@@ -211,6 +211,7 @@ footer { background: var(--plum-dark); color: #d9ccd9; }
 .reveal.visible { opacity: 1; transform: none; }
 
 @media (max-width: 1000px) {
+  .wordmark small { display: none; }
   .hero-layout, .case-thrift, .case-recs, .process-layout, .experience-layout, .contact-layout { grid-template-columns: 1fr; }
   .hero-layout { gap: 35px; }
   .hero-collage { max-width: 650px; width: 100%; margin: 0 auto; }
