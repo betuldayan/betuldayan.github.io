@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Betul Dayan is a consumer insights and marketing analytics researcher specializing in survey design, experiments, statistical analysis, retail, and e-commerce." />
     <title>Betul Dayan | Consumer Insights & Marketing Analytics</title>
-    <link rel="stylesheet" href="styles.css?v=5" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css?v=6" />
+    <script defer src="script.js?v=2"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -56,8 +56,15 @@
 
       <section class="projects-section" id="work">
         <div class="shell">
-          <div class="section-heading reveal"><h2>Projects</h2></div>
-          <div class="project-grid">
+          <div class="section-heading reveal">
+            <h2>Projects</h2>
+            <div class="carousel-controls" aria-label="Project carousel controls">
+              <button class="carousel-button" type="button" data-project-previous aria-label="Show previous projects" aria-controls="project-carousel-track">←</button>
+              <button class="carousel-button" type="button" data-project-next aria-label="Show more projects" aria-controls="project-carousel-track">→</button>
+            </div>
+          </div>
+          <div class="project-carousel">
+          <div class="project-grid" id="project-carousel-track" data-project-track>
             <a class="project-card reveal" href="thrift-retail.html">
               <div class="project-image"><img src="assets/mixed-display.png" alt="Secondhand retail product display" /></div>
               <div class="project-copy"><p>Retail · Consumer insights</p><h3>Second-Hand Retail Stores</h3><span>10 experiments · ~2,500 participants · field study</span></div>
@@ -70,14 +77,15 @@
               <div class="project-image sona-image"><img src="assets/sona-systems-logo.png" alt="SONA Systems logo" /></div>
               <div class="project-copy"><p>Research operations · Data quality</p><h3>SONA Participant Pool</h3><span>100-400 participants per study. Grading student research papers</span></div>
             </a>
-            <article class="project-card reveal">
+            <a class="project-card reveal" href="https://www.routledge.com/The-Darker-Side-of-Social-Media-Consumer-Psychology-and-Mental-Health/CloseScheinbaum/p/book/9781032530673" target="_blank" rel="noreferrer">
               <div class="project-image book-cover-image"><img src="assets/published-work-cover.jpg" alt="Cover of The Darker Side of Social Media: Consumer Psychology and Mental Health" /></div>
-              <div class="project-copy"><p>Book chapter · Consumer psychology</p><h3>Published Work</h3><span>The Darker Side of Social Media · Routledge · 2024</span></div>
-            </article>
-            <article class="project-card reveal">
+              <div class="project-copy"><p>Published book chapter</p><h3>Published Work</h3><span><cite>The Darker Side of Social Media: Consumer Psychology and Mental Health</cite> · Routledge</span></div>
+            </a>
+            <a class="project-card reveal" href="photography.html">
               <div class="project-image photography-image"><img src="assets/photography-cover.jpg" alt="Autumn trees and a cyclist on a wooded path" /></div>
               <div class="project-copy"><p>Photography · Personal work</p><h3>Photography</h3><span>Nature, place, and visual observation</span></div>
-            </article>
+            </a>
+          </div>
           </div>
         </div>
       </section>

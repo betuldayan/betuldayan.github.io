@@ -47,6 +47,35 @@ displayButtons.forEach((button) => {
   });
 });
 
+const projectTrack = document.querySelector("[data-project-track]");
+const previousProjectButton = document.querySelector("[data-project-previous]");
+const nextProjectButton = document.querySelector("[data-project-next]");
+
+const updateProjectControls = () => {
+  if (!projectTrack) return;
+  const maxScroll = projectTrack.scrollWidth - projectTrack.clientWidth;
+  previousProjectButton?.toggleAttribute("disabled", projectTrack.scrollLeft <= 2);
+  nextProjectButton?.toggleAttribute("disabled", projectTrack.scrollLeft >= maxScroll - 2);
+};
+
+const moveProjects = (direction) => {
+  if (!projectTrack) return;
+  const card = projectTrack.querySelector(".project-card");
+  if (!card) return;
+  const gap = Number.parseFloat(getComputedStyle(projectTrack).gap) || 0;
+  const visibleCards = window.innerWidth <= 760 ? 1 : window.innerWidth <= 1000 ? 2 : 3;
+  projectTrack.scrollBy({
+    left: direction * (card.getBoundingClientRect().width + gap) * visibleCards,
+    behavior: reducedMotion ? "auto" : "smooth",
+  });
+};
+
+previousProjectButton?.addEventListener("click", () => moveProjects(-1));
+nextProjectButton?.addEventListener("click", () => moveProjects(1));
+projectTrack?.addEventListener("scroll", updateProjectControls, { passive: true });
+window.addEventListener("resize", updateProjectControls);
+updateProjectControls();
+
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (reducedMotion) {
