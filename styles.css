@@ -80,6 +80,12 @@ button { font: inherit; }
 .project-copy h3 { margin: 0 0 28px; color: var(--plum); font-family: Georgia, serif; font-size: 31px; line-height: 1.04; }
 .project-copy span { color: var(--muted); font-size: 13px; font-weight: 750; }
 .project-art { position: relative; display: grid; place-items: center; }
+.recommendation-gallery { position: relative; padding: 18px; background: var(--sky); }
+.recommendation-gallery img { position: absolute; object-fit: cover; border: 6px solid var(--paper-2); box-shadow: 8px 10px 0 rgba(64,41,68,.16); }
+.recommendation-gallery .gallery-main { left: 20px; top: 20px; width: 72%; height: 82%; object-position: center; transform: rotate(-2deg); }
+.recommendation-gallery .gallery-secondary { right: 18px; bottom: 18px; width: 58%; height: 52%; object-position: center; transform: rotate(2deg); }
+.sona-image { display: grid; place-items: center; padding: 42px 28px; background: var(--lime); }
+.sona-image img { width: 100%; height: auto; object-fit: contain; }
 .recommendation-art { background: var(--sky); }
 .art-bottle { width: 72px; height: 150px; border-radius: 20px 20px 27px 27px; background: var(--paper-2); box-shadow: 10px 12px 0 rgba(64,41,68,.2); }
 .art-bottle::before { content: ""; display: block; width: 32px; height: 25px; margin: -18px auto 0; border-radius: 7px 7px 0 0; background: var(--plum); }
