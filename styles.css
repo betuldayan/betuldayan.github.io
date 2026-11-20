@@ -38,7 +38,8 @@ button { font: inherit; }
 .about-section { padding: 110px 0; background: var(--plum); color: #fff; }
 .about-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 8vw; align-items: center; }
 .about-photo { margin: 0; padding: 12px; background: var(--paper-2); transform: rotate(-1.5deg); box-shadow: 16px 18px 0 rgba(0,0,0,.13); }
-.about-photo img { width: 100%; height: min(600px, 60vw); object-fit: cover; object-position: center top; }
+.about-photo-frame { overflow: hidden; }
+.about-photo img { width: 100%; height: min(600px, 60vw); object-fit: cover; object-position: center 34%; transform: scale(1.18); transform-origin: 50% 34%; }
 .about-section .section-label { color: var(--yellow); }
 .about-copy h2, .section-heading h2, .project-details h2, .project-demo-section h2, .rec-showcase h2, .operations-callout h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 5.7vw, 5.8rem); font-weight: 500; line-height: .97; letter-spacing: -.055em; }
 .about-lede { margin: 30px 0 14px; color: #fff; font-size: 22px; line-height: 1.45; }
