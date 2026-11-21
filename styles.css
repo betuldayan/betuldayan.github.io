@@ -151,21 +151,15 @@ footer { background: var(--plum-dark); color: #ddd0dd; }
 .back-link { display: inline-block; margin-bottom: 80px; color: var(--plum); font-size: 13px; font-weight: 850; text-underline-offset: 5px; }
 .project-hero h1 { max-width: 1000px; margin: 0; color: var(--plum); font-family: Georgia, serif; font-size: clamp(4rem, 8vw, 7.7rem); font-weight: 500; line-height: .9; letter-spacing: -.065em; }
 .project-hero > .shell > p:last-child { max-width: 720px; margin: 34px 0 0; color: #554c50; font-size: 21px; }
-.project-facts { background: var(--plum); color: #fff; }
-.fact-grid { display: grid; grid-template-columns: repeat(3,1fr); }
-.fact-grid div { min-height: 150px; padding: 30px 30px 26px 0; border-right: 1px solid #916978; }
-.fact-grid div + div { padding-left: 30px; }
-.fact-grid div:last-child { border: 0; }
-.fact-grid strong, .fact-grid span { display: block; }
-.fact-grid strong { color: var(--yellow); font-family: Georgia, serif; font-size: 49px; line-height: 1; }
-.fact-grid span { margin-top: 10px; color: #eadfe1; font-size: 12px; font-weight: 900; text-transform: uppercase; }
 .project-details { padding: 105px 0; background: var(--paper-2); }
 .detail-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1px; border: 1px solid var(--plum); background: var(--plum); }
 .detail-grid article { min-height: 300px; padding: 42px; background: var(--paper-2); }
 .detail-grid article:first-child { grid-row: span 3; }
 .detail-grid article:not(:first-child) { min-height: 0; }
 .detail-grid h2 { color: var(--plum); font-size: clamp(2.7rem, 4.8vw, 4.7rem); }
+.detail-grid article:first-child h2 { font-size: clamp(2.35rem, 3.8vw, 3.8rem); }
 .detail-grid article > p:last-child { margin: 0; color: var(--muted); }
+.detail-grid article:first-child > p:last-child { margin-top: 28px; }
 .project-demo-section, .rec-showcase { padding: 105px 0; background: var(--yellow); }
 .demo-layout, .rec-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 70px; align-items: start; }
 .project-demo-section h2, .rec-showcase h2 { color: var(--plum); font-size: clamp(2.8rem, 5vw, 5rem); }
@@ -292,8 +286,6 @@ footer { background: var(--plum-dark); color: #ddd0dd; }
   .project-hero { padding: 65px 0 70px; }
   .back-link { margin-bottom: 55px; }
   .project-hero h1 { font-size: clamp(3.6rem, 17vw, 5.5rem); }
-  .fact-grid { grid-template-columns: 1fr; }
-  .fact-grid div, .fact-grid div + div { min-height: auto; border-right: 0; border-bottom: 1px solid #916978; padding: 25px 0; }
   .detail-grid { grid-template-columns: 1fr; }
   .detail-grid article:first-child { grid-row: auto; }
   .detail-grid article { min-height: 0; padding: 30px 24px; }
