@@ -35,7 +35,7 @@ button { font: inherit; }
 .home-hero::after { content: ""; position: absolute; width: 420px; height: 420px; right: -130px; top: -180px; border-radius: 50%; background: var(--rose); opacity: .65; }
 .home-hero .shell { position: relative; z-index: 1; }
 .home-hero h1 { max-width: 1050px; margin: 0; color: var(--plum-dark); font-family: var(--font-display); font-size: clamp(4rem, 8.7vw, 8.2rem); font-weight: 500; line-height: .95; letter-spacing: -.03em; }
-.home-hero h1.intro-title { max-width: none; font-size: clamp(3rem, 5.5vw, 4rem); white-space: nowrap; }
+.home-hero h1.intro-title { max-width: 1000px; font-size: clamp(3rem, 6vw, 5.25rem); line-height: .98; white-space: normal; overflow-wrap: anywhere; text-wrap: balance; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 50px; border-top: 1px solid var(--line); padding-top: 22px; color: var(--plum); font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
 .about-section { padding: 110px 0; background: var(--plum); color: #fff; }
@@ -276,7 +276,7 @@ footer { background: var(--plum-dark); color: #ddd0dd; }
   .site-nav .nav-pill { margin-top: 8px; text-align: center; }
   .home-hero { padding: 78px 0 70px; }
   .home-hero h1 { font-size: clamp(3.5rem, 17vw, 5.2rem); }
-  .home-hero h1.intro-title { font-size: clamp(3rem, 13vw, 4.5rem); white-space: normal; }
+  .home-hero h1.intro-title { font-size: clamp(2.8rem, 12vw, 4rem); }
   .about-section, .capabilities-section, .projects-section, .experience-section, .contact-section, .project-details, .project-demo-section, .rec-showcase { padding: 80px 0; }
   .about-layout { grid-template-columns: 1fr; gap: 55px; }
   .about-photo { max-width: 520px; }
